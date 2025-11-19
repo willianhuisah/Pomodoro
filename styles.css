@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color:rgb(212, 210, 210); /* Fondo claro f4f4f9*/
+    color: #333;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pomodoro-app {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+#time-display {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff; /* Color primario para el tiempo */
+}
+
+#current-phase {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-pause-btn {
+    background-color: #28a745; /* Verde para iniciar */
+    color: white;
+}
+
+#start-pause-btn:hover {
+    background-color: #218838;
+}
+
+#reset-btn {
+    background-color: #dc3545; /* Rojo para reiniciar */
+    color: white;
+}
+
+/* Estilos de configuración */
+.settings {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+
+.settings input {
+    width: 50px;
+    padding: 5px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.metrics {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}

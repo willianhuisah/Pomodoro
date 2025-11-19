@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Focus - TecniEstudio</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>⏰ Pomodoro Focus</h1>
+        <p>Estudia mejor, descansa a tiempo.</p>
+    </header>
+
+    <main class="pomodoro-app">
+        
+        <div class="timer-container">
+            <div id="time-display">25:00</div>
+            <p id="current-phase">¡Es hora de Concentrarse!</p>
+        </div>
+
+        <div class="controls-container">
+            <button id="start-pause-btn">Iniciar</button>
+            <button id="reset-btn">Reiniciar</button>
+        </div>
+
+        <div class="settings">
+            <h2>Configuración de Ciclos</h2>
+            <p>Trabajo:</p>
+            <input type="number" id="work-duration" value="25" min="1">
+            <p>Descanso Corto:</p>
+            <input type="number" id="short-break-duration" value="5" min="1">
+            <p>Descanso Largo (cada 4 ciclos):</p>
+            <input type="number" id="long-break-duration" value="15" min="1">
+        </div>
+
+        <div class="metrics">
+            <h2>📊 Tu Progreso</h2>
+            <p>Ciclos Completados: <span id="cycles-completed">0</span></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TecniEstudio App</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
